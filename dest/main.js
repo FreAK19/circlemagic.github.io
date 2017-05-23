@@ -3,8 +3,7 @@
  */
 
     $(".btn").on("click", function (event) {
-		event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top - 60}, 1500);
+		let top = window.innerHeight;
+		console.log(top);
+        $('body,html').animate({scrollTop: top + 20}, 1500);
     });
