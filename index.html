@@ -146,19 +146,21 @@
 <script src="dist/jquery-1.7.1.min.js"></script>
 <script src="src/jquery.circleMagic.js"></script>
 <script>
-  $(".btn").on("click", function (e) {
-    e.preventDefault();
-    var top = window.innerHeight;
-    console.log(top);
-    $('body,html').animate({scrollTop: top + 20}, 1200);
-  });
+  window.onload = function() {
+    $(".btn").on("click", function (e) {
+      e.preventDefault();
+      var top = window.innerHeight;
+      console.log(top);
+      $('body,html').animate({scrollTop: top + 20}, 1200);
+    });
 
-  $('.header').circleMagic({
-    radius: 35,
-    density: .1,
-    color: 'rgba(255,255,255, .4)',
-    clearOffset: .9
-  });
+    $('.header').circleMagic({
+      radius: 35,
+      density: .1,
+      color: 'rgba(255,255,255, .4)',
+      clearOffset: .9
+    });
+  }
 </script>
 </body>
 </html>
