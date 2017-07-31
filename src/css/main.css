@@ -12,6 +12,7 @@ body {
      background: #eef1f3;
      padding: 26px;
      margin-bottom: 80px;
+     border-radius: 5px;
  }
 .copy h1 {
     font-size: 1.7em;
@@ -52,4 +53,8 @@ body {
     padding: 10px;
     background: #f9f9f9;
     text-align: center;
+}
+
+.footer p {
+    font-weight: bold;
 }
